@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Main container holding all blocks */
+    .container {
+      width: 500px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      border: 2px solid black;
+    }
+
+    /* Top Pink Box */
+    .top-box {
+      background-color: #d87093;
+      height: 35%;
+      width: 100%;
+      border: 2px solid teal;
+    }
+
+    /* Bottom section split into Left and Right */
+    .bottom-section {
+      display: flex;
+      height: 65%;
+      width: 100%;
+      border: 2px solid teal;
+    }
+
+    /* Left area containing Grey and Yellow */
+    .left-side {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 100%;
+      border: 2px solid teal;
+    }
+
+    .grey-box {
+      background-color: #bfa89e;
+      height: 50%;
+      border: 2px solid teal;
+    }
+
+    .yellow-box {
+      background-color: #f7eea4;
+      height: 50%;
+      border: 3px solid teal;
+    }
+
+    /* Right Green Box */
+    .green-box {
+      background-color: #31e981;
+      width: 20%;
+      height: 100%;
+      border: 2px solid teal;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="top-box">
+        top
+    </div>
+    
+    <div class="bottom-section">
+      <div class="left-side">
+        <div class="grey-box">
+            Grey
+        </div>
+        <div class="yellow-box">
+            yellow
+        </div>
+      </div>
+      <div class="green-box">
+        green
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
