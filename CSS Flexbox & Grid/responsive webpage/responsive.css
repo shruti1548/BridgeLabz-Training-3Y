@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header using Flexbox */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: #333;
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main using Grid */
+main {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 30px;
+
+    padding: 40px;
+}
+
+/* Article */
+article {
+    padding: 20px;
+}
+
+article h1 {
+    animation: slideUp 1s ease;
+}
+
+article > p {
+    margin: 20px 0;
+}
+
+/* Three boxes using Flexbox */
+.boxes {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    flex: 1;
+    padding: 30px;
+
+    background-color: #eee;
+
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Sidebar */
+aside {
+    padding: 30px;
+    background-color: #eee;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+
+    text-align: center;
+
+    padding: 20px;
+
+    background-color: #333;
+    color: white;
+}
+
+/* Animation */
+@keyframes slideUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
