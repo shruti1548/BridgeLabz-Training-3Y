@@ -1,0 +1,104 @@
+/*
+.container{
+    width : 100px;
+    height : 100px;
+    background-color : red;
+    transition : transform 1s ease-in;
+    animation : move 2s ease;
+}
+
+*/
+
+/*.container:hover {
+   /* transform : translateX(600px);
+    transform : rotate(60deg); 
+    transform : translateX(600px) rotate(60deg) scale(2); 
+
+}
+*/
+
+/*
+@keyframes move{
+from{
+    transform : translate(0px);
+}
+to{
+    transform : translate(600px);
+}
+}
+*/
+
+/*
+
+@keyframes move{
+0%{
+    transform : translate(0px);
+}
+30%{
+    transform : translate(600px);
+}
+}
+*/
+
+/*
+@keyframes move{
+0%{
+    transform : translate(0px,0px);
+}
+25%{
+    transform : translate(600px, 0px);
+}
+50%{
+    transform : translate(600px, 300px);
+}
+90%{
+   transform : translate(0px, 300px);
+} 
+100%{
+   transform : translate(0px, 0px);
+}  
+}
+*/
+
+.spinner{
+    width : 100px;
+    height : 100px;
+    background-color : white;
+    border-top : 10px solid black;
+    border-radius : 50%;
+    animation : spin 1s linear infinite;
+}
+
+@keyframes spin {
+0%{
+    transform : rotate(0deg);
+}
+100%{
+    transform : rotate(360deg);
+}
+}
+
+
+.ball{
+width : 100px;
+    height : 100px;
+    margin-top : 300px;
+    background-color : red;
+   
+    border-radius : 50%;
+    animation : bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
