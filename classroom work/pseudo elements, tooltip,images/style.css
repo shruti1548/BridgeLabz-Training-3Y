@@ -1,0 +1,68 @@
+
+h1{
+    position : relative;
+}
+
+
+h1::before{
+    position : absolute;
+    content : " ";
+    width : 60px;
+    height : 3px;
+    background-color : red;
+    top : 35px;
+    transition : width 1s ease;
+
+
+}
+
+h1::first-letter{
+    font-size : 3rem;
+    color : blue;
+}
+
+h1:hover::before{
+    background-color : teal;
+    width : 100px;
+}
+
+.tooltip {
+    position: relative;
+    margin: 100px;
+}
+
+/* Tooltip box */
+.tooltip::after {
+    content: "Hello!";
+    
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+
+    visibility: hidden;
+}
+
+/* Arrow */
+.tooltip::before {
+    content: "";
+    
+    position: absolute;
+    bottom: 80%;
+    left: 50%;
+    
+    border: 6px solid transparent;
+    border-top-color: black;
+
+    visibility: hidden;
+}
+
+/* Show tooltip when we hover */
+.tooltip:hover::after,
+.tooltip:hover::before {
+    visibility: visible;
+}
