@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+
+    <style>
+        .gallery img {
+            width: 120px;
+            height: 100px;
+            object-fit: cover;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        #modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        #modalContent {
+            background: white;
+            padding: 15px;
+        }
+
+        #modalImage {
+            max-width: 80vw;
+            max-height: 70vh;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Image Gallery</h2>
+
+    <div class="gallery">
+        <img src="https://picsum.photos/id/10/300/200">
+        <img src="https://picsum.photos/id/20/300/200">
+        <img src="https://picsum.photos/id/30/300/200">
+        <img src="https://picsum.photos/id/40/300/200">
+        <img src="https://picsum.photos/id/50/300/200">
+        <img src="https://picsum.photos/id/60/300/200">
+    </div>
+
+    <div id="modal">
+        <div id="modalContent">
+            <img id="modalImage">
+            <br>
+            <button id="closeButton">Close</button>
+        </div>
+    </div>
+
+    <script src="question5.js"></script>
+</body>
+</html>
