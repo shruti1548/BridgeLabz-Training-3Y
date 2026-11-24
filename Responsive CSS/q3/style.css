@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+/* Four cards in a row */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 calc(25% - 20px);
+    padding: 30px 20px;
+    background-color: lightblue;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: lightgreen;
+}
+
+/* Tablet: two columns */
+@media (max-width: 900px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+/* Mobile: one column */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

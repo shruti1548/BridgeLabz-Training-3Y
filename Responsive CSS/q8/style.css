@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+/* Side-by-side layout */
+.comparison {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+figure {
+    margin: 0;
+    width: 45%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px gray;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Apply filter to second image */
+.filtered {
+    filter: brightness(50%) contrast(150%);
+    transition: filter 0.5s ease;
+}
+
+/* Remove filter on hover */
+.filtered:hover {
+    filter: none;
+}
+
+figcaption {
+    padding: 12px;
+    font-weight: bold;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+    .comparison {
+        flex-direction: column;
+    }
+
+    figure {
+        width: 100%;
+    }
+}

@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+/* Center content */
+.content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Responsive heading */
+.content h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    color: steelblue;
+}
+
+/* Responsive paragraph */
+.content p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.7;
+    color: #444;
+}
+
+/* Improve readability on mobile */
+@media (max-width: 700px) {
+    .content {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .content p {
+        line-height: 1.8;
+    }
+}

@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header and navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    padding: 15px 30px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* Main Grid layout */
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 30px;
+}
+
+/* Common section styling */
+.main-grid section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px gray;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Gallery takes full width */
+.gallery {
+    grid-column: 1 / -1;
+}
+
+.images {
+    display: flex;
+    gap: 15px;
+}
+
+.images img {
+    width: 33.33%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-column: auto;
+    }
+
+    .images {
+        flex-direction: column;
+    }
+
+    .images img {
+        width: 100%;
+    }
+}

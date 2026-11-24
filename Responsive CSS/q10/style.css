@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Dashboard header */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main dashboard Grid */
+.dashboard {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    min-height: 75vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #333;
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: orange;
+}
+
+/* Main content */
+.main-content {
+    padding: 30px;
+}
+
+/* Dashboard cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px gray;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    /* Load animation */
+    animation: loadCard 0.8s ease-in-out;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 18px gray;
+}
+
+.card a {
+    color: steelblue;
+}
+
+/* Keyframe animation */
+@keyframes loadCard {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive dashboard */
+@media (max-width: 750px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

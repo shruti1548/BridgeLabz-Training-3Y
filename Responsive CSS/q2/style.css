@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header using Flexbox */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    padding: 15px 30px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* Feature boxes */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 60px 30px;
+}
+
+.box {
+    background-color: white;
+    padding: 30px;
+    flex: 1;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px gray;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive layout */
+@media (max-width: 750px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
