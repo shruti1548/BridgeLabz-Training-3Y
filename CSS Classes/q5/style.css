@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+/* Flexbox alignment */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    min-height: 400px;
+}
+
+/* Common button styling */
+button {
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px gray;
+}
+
+/* Primary button */
+.primary {
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+.primary:hover {
+    background-color: darkblue;
+}
+
+/* Secondary button */
+.secondary {
+    background-color: gray;
+    color: white;
+    border: none;
+}
+
+.secondary:hover {
+    background-color: #444;
+}
+
+/* Outline button */
+.outline {
+    background: transparent;
+    color: blue;
+    border: 2px solid blue;
+}
+
+.outline:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* Focus pseudo-class */
+button:focus {
+    outline: 3px solid orange;
+    outline-offset: 4px;
+}
+
+/* Active pseudo-class */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Disabled pseudo-class */
+button:disabled {
+    background-color: lightgray;
+    color: gray;
+    cursor: not-allowed;
+    box-shadow: none;
+}

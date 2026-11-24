@@ -1,0 +1,114 @@
+/* Apply consistent box sizing */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+}
+
+/* Header styling */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main layout */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Main card */
+.card {
+    width: 400px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px gray;
+    text-align: center;
+}
+
+/* Image styling */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Focus effect */
+input:focus, textarea:focus {
+    outline: 2px solid steelblue;
+    border-color: steelblue;
+}
+
+/* Button layout */
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: steelblue;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+.reset {
+    background-color: gray;
+}
+
+.reset:hover {
+    background-color: #444;
+}
+
+/* Footer styling */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+    .card {
+        width: 100%;
+    }
+}

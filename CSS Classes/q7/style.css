@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #dbeafe, #e9d5ff);
+    text-align: center;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+/* Card layout using Flexbox */
+.card {
+    width: 350px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px gray;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input and dropdown styling */
+input, select {
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Focus effect */
+input:focus, select:focus {
+    outline: 2px solid blue;
+    border-color: blue;
+}
+
+/* Button styling */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: steelblue;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+/* Responsive card */
+@media (max-width: 400px) {
+    .card {
+        width: 90%;
+    }
+}

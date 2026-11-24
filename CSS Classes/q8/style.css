@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+/* Flexbox comparison layout */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+/* Common box styling */
+.box {
+    width: 250px;
+    height: 200px;
+    padding: 25px;
+    border: 8px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Default box sizing */
+.content-box {
+    box-sizing: content-box;
+    background-color: lightblue;
+}
+
+/* Border-box sizing */
+.border-box {
+    box-sizing: border-box;
+    background-color: lightgreen;
+}
+
+/* Explanation */
+.description {
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,73 @@
+/* Element selector */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Element selector */
+p {
+    color: #333;
+}
+
+/* Class selector */
+.highlight {
+    background-color: lightyellow;
+    padding: 10px;
+}
+
+/* ID selector */
+#special {
+    color: blue;
+    font-weight: bold;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+/* Attribute selector */
+a[href^="https"] {
+    color: green;
+}
+
+/* Descendant combinator */
+.parent p {
+    margin: 10px;
+}
+
+/* Child combinator */
+.parent > div {
+    background-color: lightblue;
+    padding: 10px;
+}
+
+/* Adjacent sibling combinator */
+h3 + p {
+    color: red;
+}
+
+/* General sibling combinator */
+h3 ~ p {
+    font-weight: bold;
+}
+
+header, footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}

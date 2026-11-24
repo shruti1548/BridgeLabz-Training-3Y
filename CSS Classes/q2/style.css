@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 25px;
+}
+
+/* Centering examples using Flexbox */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-height: 400px;
+    flex-wrap: wrap;
+}
+
+/* Tooltip parent */
+.tooltip {
+    position: relative;
+    background-color: steelblue;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltip-text {
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show tooltip on hover */
+.tooltip:hover .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+}

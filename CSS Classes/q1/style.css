@@ -1,0 +1,56 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+/* Flexbox layout */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.example {
+    background: white;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+}
+
+/* Hover pseudo-class */
+a:hover {
+    color: red;
+}
+
+/* Focus pseudo-class */
+input:focus {
+    outline: 2px solid blue;
+    background-color: lightyellow;
+}
+
+/* Active pseudo-class */
+button:active {
+    background-color: green;
+    color: white;
+}
+
+/* Nth-child pseudo-class */
+li:nth-child(2) {
+    background-color: lightblue;
+}
+
+button, input {
+    padding: 10px;
+}
