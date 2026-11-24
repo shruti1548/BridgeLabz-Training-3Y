@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.box {
+    width: 200px;
+    height: 150px;
+    padding: 30px;
+    border: 10px solid blue;
+    margin: 20px;
+    background-color: lightblue;
+    outline: 3px dashed red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Default box model */
+.content-box {
+    box-sizing: content-box;
+}
+
+/* Border-box model */
+.border-box {
+    box-sizing: border-box;
+}

@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+main {
+    margin-top: 80px;
+}
+
+section {
+    height: 300px;
+    padding: 40px;
+    margin: 20px;
+    color: white;
+}
+
+.linear {
+    background: linear-gradient(to right, blue, purple, pink);
+    background-attachment: fixed;
+}
+
+.radial {
+    background: radial-gradient(circle, orange, red, darkred);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: black;
+    color: white;
+}

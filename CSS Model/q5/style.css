@@ -1,0 +1,57 @@
+/* Descendant selector */
+body p {
+    color: blue;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+/* Attribute selector for HTTPS links */
+a[href^="https"] {
+    color: green;
+}
+
+/* Hover selector */
+a:hover {
+    color: red;
+}
+
+/* Focus selector */
+input:focus {
+    outline: 2px solid blue;
+}
+
+/* Nth-child selector */
+li:nth-child(odd) {
+    background-color: lightblue;
+}
+
+/* Before pseudo-element */
+h1::before {
+    content: "★ ";
+    color: orange;
+}
+
+/* After pseudo-element */
+h1::after {
+    content: " ★";
+    color: orange;
+}
+
+/* Child combinator */
+.parent > p {
+    background-color: lightyellow;
+}
+
+/* Adjacent sibling selector */
+h2 + p {
+    color: red;
+}
+
+/* General sibling selector */
+h2 ~ p {
+    font-weight: bold;
+}
