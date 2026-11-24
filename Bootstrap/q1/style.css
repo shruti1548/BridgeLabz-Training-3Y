@@ -1,0 +1,16 @@
+/* Hero section styling */
+.hero {
+    background: linear-gradient(to right, #0d6efd, #6610f2);
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Button hover effect */
+.btn {
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}

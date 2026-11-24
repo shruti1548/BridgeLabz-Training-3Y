@@ -1,0 +1,11 @@
+/* Food image styling */
+figure img {
+    max-height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Table hover effect */
+.table tbody tr:hover {
+    background-color: #fff3cd;
+}

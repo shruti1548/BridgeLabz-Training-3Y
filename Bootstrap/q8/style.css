@@ -1,0 +1,15 @@
+/* Pricing card hover effect */
+.pricing-card {
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Price styling */
+.card h3 {
+    font-weight: bold;
+}

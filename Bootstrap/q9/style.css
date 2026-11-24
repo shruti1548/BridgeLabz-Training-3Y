@@ -1,0 +1,13 @@
+/* Blog card hover effect */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Pagination spacing */
+.pagination {
+    gap: 5px;
+}

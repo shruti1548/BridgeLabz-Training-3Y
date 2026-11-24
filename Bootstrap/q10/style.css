@@ -1,0 +1,33 @@
+/* Carousel image styling */
+.carousel-item img {
+    height: 450px;
+    object-fit: cover;
+}
+
+/* Caption background for readability */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* Progress bar height */
+.progress {
+    height: 25px;
+    border-radius: 20px;
+}
+
+/* Responsive carousel */
+@media (max-width: 600px) {
+    .carousel-item img {
+        height: 250px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 18px;
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+    }
+}

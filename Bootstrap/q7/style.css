@@ -1,0 +1,15 @@
+/* Task tracker card styling */
+.card {
+    max-width: 750px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+/* List item hover effect */
+.list-group-item {
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f1f5f9;
+}
