@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-jQuery Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .widget {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid gray;
+        }
+
+        .active {
+            background-color: lightblue;
+        }
+
+        #modal {
+            display: none;
+            background-color: lightyellow;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Dashboard</h1>
+
+    <main>
+
+        <section class="widget">
+            <h2>Carousel Slider</h2>
+            <p id="slide">Welcome to Slide 1</p>
+        </section>
+
+        <section class="widget">
+            <h2>Notification Widget</h2>
+            <button id="showModal">Show Notification</button>
+
+            <div id="modal">
+                <p>You have a new notification!</p>
+                <button id="closeModal">Close</button>
+            </div>
+        </section>
+
+        <section class="widget" title="This is the user widget">
+            <h2>User Information</h2>
+            <p>Welcome, User!</p>
+        </section>
+
+        <section class="widget" title="This is the analytics widget">
+            <h2>Analytics</h2>
+            <p>Website performance information.</p>
+        </section>
+
+        <section class="widget" title="This is the reports widget">
+            <h2>Reports</h2>
+            <p>Monthly reports and statistics.</p>
+        </section>
+
+    </main>
+
+    <!-- jQuery Version 1 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <!-- Save Version 1 and release the $ variable -->
+    <script>
+        var jq1 = jQuery.noConflict(true);
+    </script>
+
+    <!-- jQuery Version 2 -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <!-- Save Version 2 and release the $ variable -->
+    <script>
+        var jq2 = jQuery.noConflict(true);
+    </script>
+
+    <script src="widgets.js"></script>
+
+</body>
+</html>

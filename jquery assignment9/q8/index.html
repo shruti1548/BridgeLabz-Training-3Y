@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Blog</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .post {
+            border: 1px solid gray;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        .featured {
+            background-color: lightyellow;
+        }
+
+        .tag {
+            color: blue;
+            font-weight: bold;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Blog Posts</h1>
+
+    <button id="add">Add New Post</button>
+    <button id="featured">Prepend Featured Post</button>
+    <button id="remove">Remove Last Post</button>
+    <button id="addTag">Add Tag</button>
+    <button id="highlight">Highlight Important Posts</button>
+
+    <main id="postList">
+
+        <article class="post">
+            <h2>Learning Web Development</h2>
+            <p>Web development is an important skill.</p>
+        </article>
+
+        <article class="post">
+            <h2>Introduction to Data Science</h2>
+            <p>Data Science helps us understand information.</p>
+        </article>
+
+        <article class="post">
+            <h2>Artificial Intelligence</h2>
+            <p>AI is changing the future of technology.</p>
+        </article>
+
+        <article class="post">
+            <h2>Python Programming</h2>
+            <p>Python is a beginner-friendly language.</p>
+        </article>
+
+        <article class="post">
+            <h2>Machine Learning Basics</h2>
+            <p>Machine Learning is a part of AI.</p>
+        </article>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>

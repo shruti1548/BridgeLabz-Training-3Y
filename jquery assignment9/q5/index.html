@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Directory</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .department {
+            padding: 15px;
+            margin: 15px;
+            border: 1px solid gray;
+        }
+
+        .employee {
+            padding: 10px;
+            margin: 8px;
+            background-color: #eeeeee;
+        }
+
+        .highlight {
+            background-color: lightgreen;
+        }
+
+        .contact {
+            display: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Company Team Directory</h1>
+
+    <button id="collapse">Collapse / Expand Team</button>
+    <button id="random">Select Random Employee</button>
+
+    <main id="team">
+
+        <section class="department">
+            <h2 class="departmentName">IT Department</h2>
+
+            <div class="employee manager">
+                <h3>Rahul - Manager</h3>
+                <p class="contact">Email: rahul@company.com</p>
+            </div>
+
+            <div class="employee">
+                <h3>Aman - Developer</h3>
+                <p class="contact">Email: aman@company.com</p>
+            </div>
+
+            <div class="employee">
+                <h3>Priya - Designer</h3>
+                <p class="contact">Email: priya@company.com</p>
+            </div>
+        </section>
+
+        <section class="department">
+            <h2 class="departmentName">Marketing Department</h2>
+
+            <div class="employee manager">
+                <h3>Neha - Manager</h3>
+                <p class="contact">Email: neha@company.com</p>
+            </div>
+
+            <div class="employee">
+                <h3>Riya - Marketing Executive</h3>
+                <p class="contact">Email: riya@company.com</p>
+            </div>
+
+            <div class="employee">
+                <h3>Karan - Content Writer</h3>
+                <p class="contact">Email: karan@company.com</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="team.js"></script>
+</body>
+</html>

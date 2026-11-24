@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive FAQ</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .question {
+            padding: 12px;
+            background-color: lightgray;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .answer {
+            padding: 10px;
+            display: none;
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Frequently Asked Questions</h1>
+
+    <main>
+
+        <section>
+            <h3 class="question">What is jQuery?</h3>
+            <div class="answer">
+                jQuery is a JavaScript library.
+                <input type="text" placeholder="Enter your feedback">
+            </div>
+        </section>
+
+        <section>
+            <h3 class="question">Is jQuery easy to learn?</h3>
+            <div class="answer">Yes, jQuery simplifies JavaScript.</div>
+        </section>
+
+        <section>
+            <h3 class="question">What is HTML?</h3>
+            <div class="answer">HTML creates the structure of web pages.</div>
+        </section>
+
+        <section>
+            <h3 class="question">What is CSS?</h3>
+            <div class="answer">CSS is used for styling web pages.</div>
+        </section>
+
+        <section>
+            <h3 class="question">What is JavaScript?</h3>
+            <div class="answer">JavaScript makes web pages interactive.</div>
+        </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="faq.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Courses</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .course {
+            padding: 12px;
+            margin: 10px;
+            background-color: #eeeeee;
+        }
+
+        input {
+            padding: 10px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Available Online Courses</h1>
+
+    <input type="text" id="search" placeholder="Search courses...">
+    <button id="clear">Clear Search</button>
+
+    <p id="count">Total courses: 5</p>
+
+    <main id="courseList">
+
+        <div class="course">Web Development</div>
+        <div class="course">Data Science</div>
+        <div class="course">Python Programming</div>
+        <div class="course">Machine Learning</div>
+        <div class="course">Java Programming</div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="courses.js"></script>
+</body>
+</html>
